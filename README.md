@@ -1,4 +1,4 @@
-# 📚 End-to-End Modular RAG Pipeline
+# End-to-End Modular RAG Pipeline
 
 A production-grade, privacy-first, and completely free **Retrieval-Augmented Generation (RAG)** pipeline featuring a **FastAPI** backend orchestrator and a modern **React (Vite)** chat interface.
 
@@ -6,7 +6,7 @@ This system allows users to chat with multi-page PDFs locally and in real time, 
 
 ---
 
-## 🏛️ System Architecture
+##  System Architecture
 
 The pipeline is built on a clean **Separation of Concerns** principle. Every layer is modular, stateless where possible, and can be swapped without rewriting other components:
 
@@ -36,7 +36,7 @@ The pipeline is built on a clean **Separation of Concerns** principle. Every lay
 
 
 
-## 🛠️ Tech Stack & Technical Deep-Dive
+## Tech Stack & Technical Deep-Dive
 
 | Component | Technology | Rationale |
 | :--- | :--- | :--- |
@@ -50,7 +50,7 @@ The pipeline is built on a clean **Separation of Concerns** principle. Every lay
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart Guide
 
 ### 1. Clone & Set Up the Python Backend
 
@@ -110,14 +110,10 @@ npm run dev
 
 ---
 
-## 🔒 Planned Enhancements
+##  Planned Enhancements
 
 * [ ] **Role-Based Access Control (RBAC):** Implementing metadata filtering in ChromaDB (`allowed_roles`) coupled with JWT auth in FastAPI to restrict document access by user clearance.
 * [ ] **Hierarchical Summarization:** Adding a Map-Reduce chain to handle global book-level summaries without context window degradation.
 * [ ] **Streaming Responses:** Implementing Server-Sent Events (SSE) in FastAPI for token-by-token typing animations in the React UI.
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License - open-source and free for commercial and non-commercial use.
