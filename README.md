@@ -34,27 +34,7 @@ The pipeline is built on a clean **Separation of Concerns** principle. Every lay
 [ 6. Frontend UI ]     ────────► React (Vite) + Lucide Icons (Chatbot UI with Source Badges)
 ```
 
----
 
-## 📖 Document Selection: Why *Crime and Punishment*? (A Trivial Decision)
-
-For our primary test case, we placed Dostoevsky's classic novel **`crime-and-punishment.pdf`** into the `/pdf` directory.
-
-### Why this choice was fundamentally trivial:
-The entire pipeline is **strictly document-agnostic**. The ingestion engine does not care whether a PDF is:
-* An enterprise financial quarterly report ($10-K$).
-* A collection of complex medical research papers.
-* An employee handbook or legal contract.
-* Or a 500-page narrative novel like *Crime and Punishment*.
-
-The pipeline treats any document as raw text streams, extracts page metadata, tokenizes the stream into discrete semantic packages, and stores them in geometric hyperspace. Any user can delete `crime-and-punishment.pdf`, drop in 20 company invoices, run `python ingest.py`, and the system adapts with zero code changes.
-
-### Why testing with *Crime and Punishment* is illuminating:
-While arbitrary, choosing a dense literary classic acts as an incredible benchmark to demonstrate the difference between **Local Retrieval** and **Global Synthesis**:
-1. **Factual / Local Retrieval (RAG's Sweet Spot):** Asking *"What weapon did Raskolnikov use?"* or *"Who is the pawnbroker?"* retrieves the exact 1–2 pages from the novel in milliseconds, providing ground-truth answers with precise citations.
-2. **Global Character Synthesis:** Asking *"Summarize Raskolnikov's character across the entire story"* highlights the classic RAG challenge: character development spans 500 pages, whereas top-$k$ vector retrieval only grabs the 3 most semantically similar paragraphs. This demonstrates why query phrasing and prompt engineering are vital in production RAG systems.
-
----
 
 ## 🛠️ Tech Stack & Technical Deep-Dive
 
