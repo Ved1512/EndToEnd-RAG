@@ -1,0 +1,21 @@
+# Security - NEVER upload your API keys!
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Vector Database (local storage)
+chroma_db/
+
+# Frontend (Node dependencies & build output)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# System files
+.DS_Store
+Thumbs.db
